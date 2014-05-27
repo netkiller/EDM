@@ -26,4 +26,11 @@ class Config{
 			return($this->config[$this->section]);
 		}
 	}
+	public function getArray($sect = null){
+		if($sect){
+			return($this->config[$sect]);
+		}else{
+			return($this->config[$this->section]);
+		}
+	}
 }
